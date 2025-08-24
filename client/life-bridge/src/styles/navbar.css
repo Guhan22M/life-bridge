@@ -1,0 +1,90 @@
+/* Navbar Gradient */
+.custom-navbar {
+  background: linear-gradient(90deg, #0077b6, #00b4d8);
+  padding: 0.8rem 1.2rem;
+  border-bottom: 2px solid #0096c7;
+}
+
+/* Brand (LifeBridge Text) */
+.brand-name {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #ffffff !important; /* Default White */
+  cursor: pointer;
+  letter-spacing: 1px;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar .brand-name {
+  color: #ffffff !important; /* White */
+}
+
+.brand-name::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background-color: #d3d3d3;
+  transition: width 0.3s ease-in-out;
+}
+
+.brand-name:hover {
+  color: #d3d3d3 !important; /* Red on Hover */
+}
+
+.brand-name:hover::after {
+  width: 100%; /* Underline animation */
+}
+
+/* Greeting Badge */
+.welcome-badge {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-weight: 500;
+  color: #fff;
+  font-size: 0.95rem;
+}
+
+/* Logout Button (Enhanced) */
+.logout-btn {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  font-weight: 600;
+  border-radius: 25px;
+  padding: 0.45rem 1.1rem;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.logout-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: #d62828;
+  transition: left 0.3s ease-in-out;
+  z-index: 0;
+}
+
+.logout-btn:hover::before {
+  left: 0;
+}
+
+.logout-btn span {
+  position: relative;
+  z-index: 1;
+}
+
+.logout-btn:hover {
+  color: #fff !important;
+  border-color: #d62828;
+}

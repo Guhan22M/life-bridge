@@ -1,0 +1,85 @@
+/* Container */
+.bloodreq-container {
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  /* Title */
+  .page-title {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #b30000;
+  }
+  
+  /* Form Card */
+  .form-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    border: 1px solid #f1f1f1;
+  }
+  
+  /* Input Fields */
+  .custom-input {
+    border-radius: 10px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease;
+  }
+  
+  .custom-input:focus {
+    border-color: #b30000;
+    box-shadow: 0 0 8px rgba(179, 0, 0, 0.2);
+  }
+  
+  /* Submit Button */
+  .submit-btn {
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 12px;
+    transition: transform 0.2s ease;
+  }
+  
+  .submit-btn:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Divider */
+  .divider {
+    margin: 30px 0;
+  }
+  
+  /* Subtitle */
+  .subtitle {
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  
+  /* History Section */
+  .history-list {
+    margin-top: 15px;
+  }
+  
+  .history-item {
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: background 0.2s ease;
+  }
+  
+  .history-item:hover {
+    background: #f8f9fa;
+  }
+  
+  /* Delete Button */
+  .delete-btn {
+    border-radius: 8px;
+    transition: all 0.2s ease;
+  }
+  
+  .delete-btn:hover {
+    background: #b30000;
+    color: white;
+  }
+  
