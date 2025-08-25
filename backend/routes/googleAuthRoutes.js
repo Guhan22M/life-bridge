@@ -20,7 +20,7 @@ router.get(
     const { user, token } = req.user;
 
     // Send token & user to frontend
-    res.redirect(`http://localhost:5000/google-success?token=${token}&name=${encodeURIComponent(user.name)}&email=${encodeURIComponent(user.email)}`);
+    res.redirect(`https://life-bridge-ca4d.onrender.com/google-success?token=${token}&name=${encodeURIComponent(user.name)}&email=${encodeURIComponent(user.email)}`);
   }
 );
 
