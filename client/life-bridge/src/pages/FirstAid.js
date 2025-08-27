@@ -122,7 +122,7 @@ const FirstAid = () => {
         />
   
         <div className="mb-3">
-          <label className="form-label subtitle">Upload Image (optional)</label>
+          {/* <label className="form-label subtitle">Upload Image (optional)</label>
           <input
             type="file"
             accept="image/*"
@@ -130,7 +130,33 @@ const FirstAid = () => {
             className="input-box"
             onChange={(e) => setImage(e.target.files[0])}
             ref={fileInputRef}
+          /> */}
+
+          {/* Camera only */}
+          <input
+            type="file"
+            accept="image/*"
+            capture="environment"
+            style={{ display: "none" }}
+            id="cameraInput"
+            onChange={(e) => setImage(e.target.files[0])}
           />
+          <label htmlFor="cameraInput" className="btn btn-outline-primary w-100 mb-2">
+            📷 Take Photo
+          </label>
+
+          {/* Gallery/file picker */}
+          <input
+            type="file"
+            accept="image/*"
+            style={{ display: "none" }}
+            id="fileInput"
+            onChange={(e) => setImage(e.target.files[0])}
+          />
+          <label htmlFor="fileInput" className="btn btn-outline-secondary w-100">
+            🖼️ Choose from Gallery
+          </label>
+
         </div>
   
         <button

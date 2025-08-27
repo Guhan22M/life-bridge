@@ -1,85 +1,173 @@
 /* Container */
 .bloodreq-container {
-    max-width: 700px;
-    margin: auto;
-    padding: 20px;
+  max-width: 700px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Title */
+.page-title {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #b30000;
+  font-size: 1.8rem;
+}
+
+/* Form Card */
+.form-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  border: 1px solid #f1f1f1;
+}
+
+/* Input Fields */
+.custom-input {
+  border-radius: 10px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.custom-input:focus {
+  border-color: #b30000;
+  box-shadow: 0 0 8px rgba(179, 0, 0, 0.2);
+}
+
+/* Submit Button */
+.submit-btn {
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 12px;
+  transition: transform 0.2s ease;
+  font-size: 1rem;
+}
+
+.submit-btn:hover {
+  transform: scale(1.02);
+}
+
+/* Divider */
+.divider {
+  margin: 30px 0;
+}
+
+/* Subtitle */
+.subtitle {
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+/* History Section */
+.history-list {
+  margin-top: 15px;
+}
+
+.history-item {
+  border-radius: 10px;
+  margin-bottom: 10px;
+  transition: background 0.2s ease;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap; /* important for small screens */
+}
+
+.history-item:hover {
+  background: #f8f9fa;
+}
+
+.history-item .badge {
+  font-size: 0.75rem;
+  padding: 4px 6px;
+}
+
+/* Delete Button */
+.delete-btn {
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.delete-btn:hover {
+  background: #b30000;
+  color: white;
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .bloodreq-container {
+    padding: 15px;
   }
-  
-  /* Title */
+
   .page-title {
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 20px;
-    color: #b30000;
+    font-size: 1.5rem;
   }
-  
-  /* Form Card */
+
   .form-card {
-    background: #fff;
-    border-radius: 12px;
-    padding: 20px;
-    border: 1px solid #f1f1f1;
+    padding: 15px;
   }
-  
-  /* Input Fields */
+
   .custom-input {
-    border-radius: 10px;
-    padding: 12px;
-    border: 1px solid #ccc;
-    transition: all 0.3s ease;
+    font-size: 0.95rem;
+    padding: 10px;
   }
-  
-  .custom-input:focus {
-    border-color: #b30000;
-    box-shadow: 0 0 8px rgba(179, 0, 0, 0.2);
-  }
-  
-  /* Submit Button */
+
   .submit-btn {
-    font-weight: bold;
-    border-radius: 10px;
-    padding: 12px;
-    transition: transform 0.2s ease;
+    font-size: 0.95rem;
+    padding: 10px;
   }
-  
-  .submit-btn:hover {
-    transform: scale(1.02);
-  }
-  
-  /* Divider */
-  .divider {
-    margin: 30px 0;
-  }
-  
-  /* Subtitle */
-  .subtitle {
-    font-weight: 600;
-    margin-bottom: 15px;
-  }
-  
-  /* History Section */
-  .history-list {
-    margin-top: 15px;
-  }
-  
+
   .history-item {
-    border-radius: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .history-item div {
     margin-bottom: 10px;
-    transition: background 0.2s ease;
   }
-  
-  .history-item:hover {
-    background: #f8f9fa;
+}
+
+/* Mobiles */
+@media (max-width: 576px) {
+  .bloodreq-container {
+    padding: 10px;
   }
-  
-  /* Delete Button */
-  .delete-btn {
-    border-radius: 8px;
-    transition: all 0.2s ease;
+
+  .page-title {
+    font-size: 1.3rem;
   }
-  
-  .delete-btn:hover {
-    background: #b30000;
-    color: white;
+
+  .custom-input {
+    font-size: 0.9rem;
+    padding: 8px;
   }
-  
+
+  .submit-btn {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .history-item {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .history-item .badge {
+    font-size: 0.7rem;
+  }
+
+  .modal-dialog {
+    margin: 10px;
+    max-width: 95% !important;
+  }
+}

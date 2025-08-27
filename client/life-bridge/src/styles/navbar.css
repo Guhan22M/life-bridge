@@ -3,21 +3,22 @@
   background: linear-gradient(90deg, #0077b6, #00b4d8);
   padding: 0.8rem 1.2rem;
   border-bottom: 2px solid #0096c7;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; /* allows wrapping on smaller screens */
 }
 
 /* Brand (LifeBridge Text) */
 .brand-name {
   font-size: 1.8rem;
   font-weight: 800;
-  color: #ffffff !important; /* Default White */
+  color: #ffffff !important;
   cursor: pointer;
   letter-spacing: 1px;
   position: relative;
   transition: all 0.3s ease-in-out;
-}
-
-.navbar .brand-name {
-  color: #ffffff !important; /* White */
+  white-space: nowrap;
 }
 
 .brand-name::after {
@@ -32,11 +33,11 @@
 }
 
 .brand-name:hover {
-  color: #d3d3d3 !important; /* Red on Hover */
+  color: #d3d3d3 !important;
 }
 
 .brand-name:hover::after {
-  width: 100%; /* Underline animation */
+  width: 100%;
 }
 
 /* Greeting Badge */
@@ -47,9 +48,10 @@
   font-weight: 500;
   color: #fff;
   font-size: 0.95rem;
+  white-space: nowrap;
 }
 
-/* Logout Button (Enhanced) */
+/* Logout Button */
 .logout-btn {
   background: transparent;
   color: #fff;
@@ -61,6 +63,8 @@
   transition: all 0.3s ease-in-out;
   position: relative;
   overflow: hidden;
+  font-size: 0.95rem;
+  white-space: nowrap;
 }
 
 .logout-btn::before {
@@ -87,4 +91,52 @@
 .logout-btn:hover {
   color: #fff !important;
   border-color: #d62828;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .custom-navbar {
+    padding: 0.6rem 1rem;
+  }
+
+  .brand-name {
+    font-size: 1.5rem;
+  }
+
+  .welcome-badge {
+    font-size: 0.9rem;
+    padding: 0.3rem 0.7rem;
+  }
+
+  .logout-btn {
+    padding: 0.35rem 0.9rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Mobiles */
+@media (max-width: 576px) {
+  .custom-navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;
+    padding: 0.6rem 0.8rem;
+  }
+
+  .brand-name {
+    font-size: 1.3rem;
+  }
+
+  .welcome-badge {
+    font-size: 0.85rem;
+    padding: 0.25rem 0.6rem;
+  }
+
+  .logout-btn {
+    font-size: 0.85rem;
+    padding: 0.3rem 0.8rem;
+    align-self: flex-start;
+  }
 }
