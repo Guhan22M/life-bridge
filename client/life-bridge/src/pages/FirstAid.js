@@ -140,6 +140,7 @@ const FirstAid = () => {
             style={{ display: "none" }}
             id="cameraInput"
             onChange={(e) => setImage(e.target.files[0])}
+            ref={fileInputRef}
           />
           <label htmlFor="cameraInput" className="btn btn-outline-primary w-100 mb-2">
             📷 Take Photo
@@ -152,6 +153,7 @@ const FirstAid = () => {
             style={{ display: "none" }}
             id="fileInput"
             onChange={(e) => setImage(e.target.files[0])}
+            ref={fileInputRef}
           />
           <label htmlFor="fileInput" className="btn btn-outline-secondary w-100">
             🖼️ Choose from Gallery
