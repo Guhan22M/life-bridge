@@ -104,9 +104,9 @@ const AuthPage = () => {
           {isLogin ? 'Login' : 'Register'}
         </button>
       </form>
-      {isLogin && (<h6 style={{alignItems:'center', justifyContent:'center', padding:'2px'}}>Or</h6>)}
       {isLogin && (
         <div className="google-login-container">
+          <h6 style={{alignItems:'center', justifyContent:'center', padding:'2px'}}>Or</h6>
           <button type="button" className="google-btn" onClick={handleGoogleLogin}>
             <img src="https://developers.google.com/identity/images/g-logo.png" alt="Google" />
             Sign in with Google
