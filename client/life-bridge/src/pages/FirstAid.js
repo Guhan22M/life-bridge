@@ -159,6 +159,13 @@ const FirstAid = () => {
             🖼️ Choose from Gallery
           </label>
 
+          {/* Show selected file name */}
+          {image && (
+            <p className="mt-2 text-success">
+              ✅ Image selected: <strong>{image.name}</strong>
+            </p>
+          )}
+
         </div>
   
         <button
